@@ -149,8 +149,6 @@ Le pipeline ETL est organisé en **3 jobs CloverDX** successifs :
 
 **Composants clés utilisés :** FlatFileReader/Writer, Filter, Combine, Map, ExtSort, Dedup, DatabaseWriter, LookupJoin.
 
-> Le détail complet des captures de configuration de chaque composant CloverDX est disponible dans [`docs/rapport_bi.pdf`](docs/rapport_bi.pdf) (section 4.3.1).
-
 ---
 
 ##  Reporting & visualisation
