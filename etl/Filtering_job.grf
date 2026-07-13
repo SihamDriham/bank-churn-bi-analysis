@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="NZ" created="Wed Nov 27 17:03:55 WEST 2024" guiVersion="6.6.0.8" id="1732734757702" licenseCode="CLP1DUNIVE20560093EX" name="Filtering_job" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="," name="Bank_Churn" previewAttachment="${DATAIN_DIR}/Bank_Churn.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="RowNumber" name="RowNumber" type="integer"/>
+<Field label="CustomerId" name="CustomerId" type="integer"/>
+<Field label="CreditScore" name="CreditScore" type="integer"/>
+<Field label="GeographyID" name="GeographyID" type="integer"/>
+<Field label="GenderID" name="GenderID" type="integer"/>
+<Field label="Age" name="Age" type="integer"/>
+<Field label="Tenure" name="Tenure" type="integer"/>
+<Field label="Balance" name="Balance" scale="2" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" type="integer"/>
+<Field label="EstimatedSalary" name="EstimatedSalary" scale="2" type="decimal"/>
+<Field label="Exited" name="Exited" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2">
+<Record fieldDelimiter="," name="Bank_Churn" previewAttachment="${DATAIN_DIR}/Bank_Churn.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="RowNumber" name="RowNumber" type="integer"/>
+<Field label="CustomerId" name="CustomerId" type="integer"/>
+<Field label="CreditScore" name="CreditScore" type="integer"/>
+<Field label="GeographyID" name="GeographyID" type="integer"/>
+<Field label="GenderID" name="GenderID" type="integer"/>
+<Field label="Age" name="Age" type="integer"/>
+<Field label="Tenure" name="Tenure" type="integer"/>
+<Field label="Balance" name="Balance" scale="2" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" type="integer"/>
+<Field label="EstimatedSalary" name="EstimatedSalary" scale="2" type="decimal"/>
+<Field label="Exited" name="Exited" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="," label="Churn Modeling" name="Churn_Modeling" previewAttachment="${DATAIN_DIR}/Churn Modeling.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field name="RowNumber" type="integer"/>
+<Field name="CustomerId" type="integer"/>
+<Field name="Surname" type="string"/>
+<Field name="CreditScore" type="integer"/>
+<Field name="Geography" type="string"/>
+<Field name="Gender" type="string"/>
+<Field name="Age" type="integer"/>
+<Field name="Tenure" type="integer"/>
+<Field name="Balance" scale="2" type="decimal"/>
+<Field name="NumOfProducts" type="integer"/>
+<Field name="HasCrCard" type="integer"/>
+<Field name="IsActiveMember" type="integer"/>
+<Field name="EstimatedSalary" scale="2" type="decimal"/>
+<Field eofAsDelimiter="true" name="Exited" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3">
+<Record fieldDelimiter="," label="Churn Modeling_D" name="Churn_Modeling_D" previewAttachment="${DATAIN_DIR}/Churn Modeling_D.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="RowNumber" name="RowNumber" type="integer"/>
+<Field label="CustomerId" name="CustomerId" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="CreditScore" name="CreditScore" type="integer"/>
+<Field label="Geography" name="Geography" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" type="integer"/>
+<Field label="Tenure" name="Tenure" type="integer"/>
+<Field label="Balance" name="Balance" scale="2" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" type="integer"/>
+<Field label="EstimatedSalary" name="EstimatedSalary" scale="2" type="decimal"/>
+<Field label="Exited" name="Exited" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node guiName="Filter" guiX="364" guiY="100" id="FILTER" type="EXT_FILTER">
+<attr name="filterExpression"><![CDATA[//#CTL2
+$in.0.RowNumber != null && $in.0.CustomerId != null && $in.0.Surname != null && $in.0.CreditScore != null && $in.0.Geography != null && $in.0.Gender != null && $in.0.Age != null && $in.0.Tenure != null && $in.0.Balance != null && $in.0.NumOfProducts != null && $in.0.HasCrCard != null && $in.0.IsActiveMember != null && $in.0.EstimatedSalary != null && $in.0.Exited != null && $in.0.Bank_DOJ != null]]></attr>
+</Node>
+<Node fileURL="${DATAIN_DIR}/Churn Modeling_D.csv" guiName="FlatFileReader" guiX="116" guiY="74" id="FLAT_FILE_READER" type="FLAT_FILE_READER"/>
+<Node fileURL="${DATAOUT_DIR}/bankOutput.csv" guiName="FlatFileWriter" guiX="626" guiY="100" id="FLAT_FILE_WRITER" outputFieldNames="true" type="FLAT_FILE_WRITER"/>
+<Edge fromNode="FILTER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" outPort="Port 0 (accepted)" toNode="FLAT_FILE_WRITER:0"/>
+<Edge fromNode="FLAT_FILE_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (output)" toNode="FILTER:0"/>
+</Phase>
+</Graph>

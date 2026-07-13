@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="NZ" created="Wed Nov 27 17:03:55 WEST 2024" guiVersion="6.6.0.8" id="1732741926928" licenseCode="CLP1DUNIVE20560093EX" name="dimension_Unique_job" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="," name="bankOutput" previewAttachment="${DATAOUT_DIR}/bankOutput.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="RowNumber" name="RowNumber" type="integer"/>
+<Field label="CustomerId" name="CustomerId" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="CreditScore" name="CreditScore" type="integer"/>
+<Field label="Geography" name="Geography" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" type="integer"/>
+<Field label="Tenure" name="Tenure" type="integer"/>
+<Field label="Balance" name="Balance" scale="2" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" type="integer"/>
+<Field label="EstimatedSalary" name="EstimatedSalary" scale="2" type="decimal"/>
+<Field label="Exited" name="Exited" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata11">
+<Record fieldDelimiter="," name="bankOutput" previewAttachment="${DATAOUT_DIR}/bankOutput.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="RowNumber" name="RowNumber" type="integer"/>
+<Field label="CustomerId" name="CustomerId" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="CreditScore" name="CreditScore" type="integer"/>
+<Field label="Geography" name="Geography" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" type="integer"/>
+<Field label="Tenure" name="Tenure" type="integer"/>
+<Field label="Balance" name="Balance" scale="2" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" type="integer"/>
+<Field label="EstimatedSalary" name="EstimatedSalary" scale="2" type="decimal"/>
+<Field label="Exited" name="Exited" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata12">
+<Record fieldDelimiter="," name="bankOutput" previewAttachment="${DATAOUT_DIR}/bankOutput.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="RowNumber" name="RowNumber" type="integer"/>
+<Field label="CustomerId" name="CustomerId" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="CreditScore" name="CreditScore" type="integer"/>
+<Field label="Geography" name="Geography" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" type="integer"/>
+<Field label="Tenure" name="Tenure" type="integer"/>
+<Field label="Balance" name="Balance" scale="2" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" type="integer"/>
+<Field label="EstimatedSalary" name="EstimatedSalary" scale="2" type="decimal"/>
+<Field label="Exited" name="Exited" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata14">
+<Record fieldDelimiter="," name="bankOutput" previewAttachment="${DATAOUT_DIR}/bankOutput.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="RowNumber" name="RowNumber" type="integer"/>
+<Field label="CustomerId" name="CustomerId" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="CreditScore" name="CreditScore" type="integer"/>
+<Field label="Geography" name="Geography" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" type="integer"/>
+<Field label="Tenure" name="Tenure" type="integer"/>
+<Field label="Balance" name="Balance" scale="2" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" type="integer"/>
+<Field label="EstimatedSalary" name="EstimatedSalary" scale="2" type="decimal"/>
+<Field label="Exited" name="Exited" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2">
+<Record fieldDelimiter="|" name="Client" recordDelimiter="\n" type="delimited">
+<Field label="CustomerId" name="CustomerId" trim="true" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" trim="true" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" trim="true" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" trim="true" type="integer"/>
+<Field label="EstimatedSalary" length="12" name="EstimatedSalary" scale="2" trim="true" type="decimal"/>
+<Field label="Exited" name="Exited" trim="true" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata7">
+<Record fieldDelimiter="|" name="Client" recordDelimiter="\n" type="delimited">
+<Field label="CustomerId" name="CustomerId" trim="true" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" trim="true" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" trim="true" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" trim="true" type="integer"/>
+<Field label="EstimatedSalary" length="12" name="EstimatedSalary" scale="2" trim="true" type="decimal"/>
+<Field label="Exited" name="Exited" trim="true" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata8">
+<Record fieldDelimiter="|" name="Client" recordDelimiter="\n" type="delimited">
+<Field label="CustomerId" name="CustomerId" trim="true" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" trim="true" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" trim="true" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" trim="true" type="integer"/>
+<Field label="EstimatedSalary" length="12" name="EstimatedSalary" scale="2" trim="true" type="decimal"/>
+<Field label="Exited" name="Exited" trim="true" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata13">
+<Record fieldDelimiter="|" name="Customer" recordDelimiter="\n" type="delimited">
+<Field label="CustomerId" name="CustomerId" trim="true" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" trim="true" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" trim="true" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" trim="true" type="integer"/>
+<Field label="EstimatedSalary" length="12" name="EstimatedSalary" scale="2" trim="true" type="decimal"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata15">
+<Record fieldDelimiter="|" name="Customer" recordDelimiter="\n" type="delimited">
+<Field label="CustomerId" name="CustomerId" trim="true" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" trim="true" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" trim="true" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" trim="true" type="integer"/>
+<Field label="EstimatedSalary" length="12" name="EstimatedSalary" scale="2" trim="true" type="decimal"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata18">
+<Record fieldDelimiter="|" name="Customer" recordDelimiter="\n" type="delimited">
+<Field label="CustomerId" name="CustomerId" trim="true" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" trim="true" type="integer"/>
+<Field label="EstimatedSalary" length="12" name="EstimatedSalary" scale="2" trim="true" type="decimal"/>
+<Field label="HasCrCard" name="HasCrCard" trim="true" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" trim="true" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter="|" name="Date" recordDelimiter="\n" type="delimited">
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata6">
+<Record fieldDelimiter="|" name="Date" recordDelimiter="\n" type="delimited">
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata10">
+<Record fieldDelimiter="|" name="Date" recordDelimiter="\n" type="delimited">
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata17">
+<Record fieldDelimiter="|" name="Date" recordDelimiter="\n" type="delimited">
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="|" name="Dimension" recordDelimiter="\n" type="delimited">
+<Field label="RowNumber" name="RowNumber" trim="true" type="integer"/>
+<Field label="CustomerId" name="CustomerId" trim="true" type="integer"/>
+<Field label="Surname" name="Surname" type="string"/>
+<Field label="CreditScore" name="CreditScore" trim="true" type="integer"/>
+<Field label="Geography" name="Geography" type="string"/>
+<Field label="Gender" name="Gender" type="string"/>
+<Field label="Age" name="Age" trim="true" type="integer"/>
+<Field label="Tenure" name="Tenure" trim="true" type="integer"/>
+<Field label="Balance" length="12" name="Balance" scale="2" trim="true" type="decimal"/>
+<Field label="NumOfProducts" name="NumOfProducts" trim="true" type="integer"/>
+<Field label="HasCrCard" name="HasCrCard" trim="true" type="integer"/>
+<Field label="IsActiveMember" name="IsActiveMember" trim="true" type="integer"/>
+<Field label="EstimatedSalary" length="12" name="EstimatedSalary" scale="2" trim="true" type="decimal"/>
+<Field label="Exited" name="Exited" trim="true" type="integer"/>
+<Field eofAsDelimiter="true" label="Bank DOJ" name="Bank_DOJ" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3">
+<Record fieldDelimiter="|" name="Geography" recordDelimiter="\n" type="delimited">
+<Field label="Geography" name="Geography" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5">
+<Record fieldDelimiter="|" name="Geography" recordDelimiter="\n" type="delimited">
+<Field label="Geography" name="Geography" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata9">
+<Record fieldDelimiter="|" name="Geography" recordDelimiter="\n" type="delimited">
+<Field label="Geography" name="Geography" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata16">
+<Record fieldDelimiter="|" name="Geography" recordDelimiter="\n" type="delimited">
+<Field label="Geography" name="Geography" type="string"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/bank" id="JDBC1" jdbcSpecific="MYSQL" name="bank" password="zn" type="JDBC" user="root"/>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/banque" id="JDBC0" jdbcSpecific="MYSQL" name="banque" password="zn" type="JDBC" user="root"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node guiName="Combine" guiX="187" guiY="59" id="COMBINE" type="COMBINE">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.CustomerId = $in.0.CustomerId;
+	$out.0.Surname = $in.0.Surname;
+	$out.0.Gender = $in.0.Gender;
+	$out.0.Age = $in.0.Age;
+	$out.0.HasCrCard = $in.0.HasCrCard;
+	$out.0.IsActiveMember = $in.0.IsActiveMember;
+	$out.0.EstimatedSalary = $in.0.EstimatedSalary;
+	$out.1.Geography = $in.0.Geography;
+	$out.2.Bank_DOJ = $in.0.Bank_DOJ;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node dbConnection="JDBC1" dbTable="customer" guiName="DatabaseWriter" guiX="817" guiY="59" id="DATABASE_WRITER" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO Customer VALUES (?,?,?,?,?,?,?)]]></attr>
+</Node>
+<Node dbConnection="JDBC1" dbTable="geography" guiName="DatabaseWriter" guiX="817" guiY="151" id="DATABASE_WRITER1" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO geography (Country) VALUES (?);]]></attr>
+</Node>
+<Node dbConnection="JDBC1" dbTable="date" guiName="DatabaseWriter" guiX="817" guiY="246" id="DATABASE_WRITER2" type="DB_OUTPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[INSERT INTO `bank`.`date` (`bank`.`date`.`date`) VALUES (STR_TO_DATE(?, '%d-%m-%Y'))]]></attr>
+</Node>
+<Node dedupKey="Geography" equalNULL="false" guiName="Dedup" guiX="675" guiY="151" id="DEDUP" sorted="false" type="DEDUP"/>
+<Node dedupKey="CustomerId(a)" guiName="Dedup" guiX="675" guiY="63" id="DEDUP1" type="DEDUP"/>
+<Node dedupKey="Bank_DOJ(a)" guiName="Dedup" guiX="675" guiY="246" id="DEDUP2" type="DEDUP"/>
+<Node guiName="ExtSort" guiX="515" guiY="59" id="EXT_SORT" sortKey="CustomerId(a)" type="EXT_SORT"/>
+<Node guiName="ExtSort" guiX="515" guiY="151" id="EXT_SORT1" sortKey="Geography(a)" type="EXT_SORT"/>
+<Node guiName="ExtSort" guiX="515" guiY="246" id="EXT_SORT2" sortKey="Bank_DOJ(a)" type="EXT_SORT"/>
+<Node fileURL="${DATAOUT_DIR}/bankOutput.csv" guiName="FlatFileReader" guiX="26" guiY="59" id="FLAT_FILE_READER" type="FLAT_FILE_READER"/>
+<Node guiName="Map" guiX="361" guiY="59" id="MAP" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.CustomerId = $in.0.CustomerId;
+	$out.0.Surname = $in.0.Surname;
+	$out.0.Gender = $in.0.Gender;
+	$out.0.Age = $in.0.Age;
+	$out.0.EstimatedSalary = $in.0.EstimatedSalary;
+	$out.0.HasCrCard = $in.0.HasCrCard;
+	$out.0.IsActiveMember = $in.0.IsActiveMember;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node guiName="Map" guiX="361" guiY="151" id="MAP1" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Geography = $in.0.Geography;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node guiName="Map" guiX="361" guiY="246" id="MAP2" type="REFORMAT">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.Bank_DOJ = $in.0.Bank_DOJ;
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Edge fromNode="COMBINE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge25" inPort="Port 0 (in)" metadata="Metadata15" outPort="Port 0 (out)" toNode="MAP:0"/>
+<Edge fromNode="COMBINE:1" guiBendpoints="" guiRouter="Manhattan" id="Edge26" inPort="Port 0 (in)" metadata="Metadata16" outPort="Port 1 (out)" toNode="MAP1:0"/>
+<Edge fromNode="COMBINE:2" guiBendpoints="" guiRouter="Manhattan" id="Edge27" inPort="Port 0 (in)" metadata="Metadata17" outPort="Port 2 (out)" toNode="MAP2:0"/>
+<Edge fromNode="DEDUP:0" guiBendpoints="" guiRouter="Manhattan" id="Edge13" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="DATABASE_WRITER1:0"/>
+<Edge fromNode="DEDUP1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge12" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="DATABASE_WRITER:0"/>
+<Edge fromNode="DEDUP2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge20" inPort="Port 0 (in)" outPort="Port 0 (unique)" toNode="DATABASE_WRITER2:0"/>
+<Edge fromNode="EXT_SORT:0" guiBendpoints="" guiRouter="Manhattan" id="Edge14" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP1:0"/>
+<Edge fromNode="EXT_SORT1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge16" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP:0"/>
+<Edge fromNode="EXT_SORT2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge18" inPort="Port 0 (in)" outPort="Port 0 (out)" toNode="DEDUP2:0"/>
+<Edge fromNode="FLAT_FILE_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge24" inPort="Port 0 (in)" metadata="Metadata14" outPort="Port 0 (output)" toNode="COMBINE:0"/>
+<Edge fromNode="MAP:0" guiBendpoints="" guiRouter="Manhattan" id="Edge19" inPort="Port 0 (in)" metadata="Metadata18" outPort="Port 0 (out)" toNode="EXT_SORT:0"/>
+<Edge fromNode="MAP1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge15" inPort="Port 0 (in)" metadata="Metadata9" outPort="Port 0 (out)" toNode="EXT_SORT1:0"/>
+<Edge fromNode="MAP2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge17" inPort="Port 0 (in)" metadata="Metadata10" outPort="Port 0 (out)" toNode="EXT_SORT2:0"/>
+</Phase>
+</Graph>
