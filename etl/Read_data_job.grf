@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="NZ" created="Fri Nov 29 22:05:29 WEST 2024" guiVersion="6.6.0.8" id="1732929284291" licenseCode="CLP1DUNIVE20560093EX" name="Read_data_job" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0">
+<Record fieldDelimiter=";" name="wrapper_table" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="id" size="10" type="integer"/>
+<Field name="Date" size="10" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1">
+<Record fieldDelimiter=";" name="wrapper_table" recordDelimiter="\n" type="delimited">
+<Field name="GeographyId" size="10" type="integer"/>
+<Field name="Country" size="255" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2">
+<Record fieldDelimiter=";" name="wrapper_table" recordDelimiter="\n" type="delimited">
+<Field name="CustomerId" size="10" type="integer"/>
+<Field name="Surname" size="255" type="string"/>
+<Field name="Gender" size="50" type="string"/>
+<Field name="Age" size="10" type="integer"/>
+<Field length="12" name="Salary" scale="2" size="13" type="decimal"/>
+<Field name="HasCreditCard" size="10" type="integer"/>
+<Field name="IsActiveMember" size="10" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3">
+<Record fieldDelimiter=";" name="wrapper_table" recordDelimiter="\n" type="delimited">
+<Field name="CustomerId" size="10" type="integer"/>
+<Field name="GeographyId" size="10" type="integer"/>
+<Field name="DateId" size="10" type="integer"/>
+<Field name="CreditScore" size="10" type="integer"/>
+<Field name="Tenure" size="10" type="integer"/>
+<Field length="12" name="Balance" scale="2" size="13" type="decimal"/>
+<Field name="NumberOfProduct" size="10" type="integer"/>
+<Field name="Exited" size="10" type="integer"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/bank" id="JDBC0" jdbcSpecific="MYSQL" name="bank" password="zn" type="JDBC" user="root"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node dbConnection="JDBC0" guiName="DatabaseReader" guiX="49" guiY="87" id="DATABASE_READER" type="DB_INPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[SELECT 
+    `bank`.`date`.`id`, 
+    DATE_FORMAT(`bank`.`date`.`date`, '%Y-%m-%d') AS `date_string`
+FROM 
+    `bank`.`date`;]]></attr>
+</Node>
+<Node dbConnection="JDBC0" guiName="DatabaseReader" guiX="43" guiY="207" id="DATABASE_READER1" type="DB_INPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[SELECT * FROM Geography ;]]></attr>
+</Node>
+<Node dbConnection="JDBC0" guiName="DatabaseReader" guiX="37" guiY="309" id="DATABASE_READER2" type="DB_INPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[SELECT * FROM Customer;]]></attr>
+</Node>
+<Node dbConnection="JDBC0" guiName="DatabaseReader" guiX="37" guiY="434" id="DATABASE_READER3" type="DB_INPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[SELECT * FROM Fact_Desabonnement]]></attr>
+</Node>
+<Node fileURL="${DATAOUT_DIR}/Date.csv" guiName="FlatFileWriter" guiX="389" guiY="87" id="FLAT_FILE_WRITER" outputFieldNames="true" type="FLAT_FILE_WRITER"/>
+<Node fileURL="${DATAOUT_DIR}/Geography.csv" guiName="FlatFileWriter" guiX="383" guiY="207" id="FLAT_FILE_WRITER1" outputFieldNames="true" type="FLAT_FILE_WRITER"/>
+<Node fileURL="${DATAOUT_DIR}/Fact_Desabonnement.csv" guiName="FlatFileWriter" guiX="368" guiY="421" id="FLAT_FILE_WRITER2" outputFieldNames="true" type="FLAT_FILE_WRITER"/>
+<Node fileURL="${DATAOUT_DIR}/Customer.csv" guiName="FlatFileWriter" guiX="375" guiY="309" id="FLAT_FILE_WRITER3" outputFieldNames="true" type="FLAT_FILE_WRITER"/>
+<Edge fromNode="DATABASE_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FLAT_FILE_WRITER:0"/>
+<Edge fromNode="DATABASE_READER1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (out)" toNode="FLAT_FILE_WRITER1:0"/>
+<Edge fromNode="DATABASE_READER2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (out)" toNode="FLAT_FILE_WRITER3:0"/>
+<Edge fromNode="DATABASE_READER3:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata3" outPort="Port 0 (out)" toNode="FLAT_FILE_WRITER2:0"/>
+</Phase>
+</Graph>
