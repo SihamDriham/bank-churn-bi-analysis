@@ -236,24 +236,17 @@ Les clients **inactifs** se désabonnent nettement plus (1 302 cas) que les clie
 
 ```
 analyse-desabonnement-bancaire-bi/
-├── docs/
-│   ├── images/
-│   │   ├── processus-etl.png
-│   │   ├── chaine-decisionnelle.png
-│   │   ├── architecture-applicative.png
-│   │   ├── modele-etoile.png
-│   │   └── dashboard-1-kpis-globaux.png ... dashboard-6-activite-carte.png
-│   └── rapport_dashboards.pdf          # export complet des dashboards Looker Studio
-│
-├── data/
-│   └── bankOutput.csv                  # données nettoyées (sortie du job de filtrage)
+├── data/ # données nettoyées (sortie du job de filtrage)
+│   └── Customer.csv
+│   └── Date.csv
+│   └── Fact_Desabonnement.csv
+│   └── Geography.csv             
 │
 ├── etl/
-│   ├── graph/
-│   │   ├── Filtering_job.grf           # Job 1 : filtrage des champs null
-│   │   ├── Dimensions_job.grf          # Job 2 : extraction des dimensions
-│   │   └── FactLoad_job.grf            # Job 3 : chargement de la table de faits
-│   └── workspace.prm
+│   │── dimension_Unique_job.grf      
+│   │── Fait_job.grf    
+│   │── Filtering_job.grf          
+│   └── Read_data_job.grp
 │
 └── README.md
 ```
